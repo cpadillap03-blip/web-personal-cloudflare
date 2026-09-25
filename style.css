@@ -13,6 +13,16 @@
     --font-cursive: 'Edwardian Script ITC', cursive;
 }
 
+body.theme-en {
+    --bg-color: #1e293b;
+    --bg-alt: #334155;
+    --text-main: #f8fafc;
+    --text-muted: #cbd5e1;
+    --accent-1: #38bdf8;
+    --accent-2: #818cf8;
+    --card-bg: rgba(255, 255, 255, 0.08);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -164,7 +174,9 @@ body {
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .btn {
@@ -322,6 +334,18 @@ body {
     font-size: 0.9rem;
     margin-bottom: 1rem;
     font-style: italic;
+}
+
+.experience-list {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+    padding-left: 1.2rem;
+}
+
+.experience-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
 /* ===== FOOTER ===== */
